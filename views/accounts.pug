@@ -1,0 +1,22 @@
+extends layouts/main-layout.pug
+
+block styles
+  link(rel="stylesheet", href="/styles/accounts.css")
+  link(rel="stylesheet", href="/styles/layout.css")
+
+block content
+  h2 Accountant Login
+  form(action="/login", method="post", id="accountantLoginForm")
+    label(for="accountantCode") Accountant Code:
+    input(type="text", id="accountantCode", name="accountantCode", required)
+      
+    label(for="accountantName") Accountant Name:
+    input(type="text", id="accountantName", name="accountantName", required)
+      
+    button(type="submit") Login
+
+    div(id="loginMessage") 
+
+block scripts
+  script(src="/scripts/accounts.js")
+  script(src="/scripts/layout.js")

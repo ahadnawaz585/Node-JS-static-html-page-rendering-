@@ -1,0 +1,41 @@
+extends layouts/main-layout.pug
+
+block styles
+  link(rel="stylesheet", href="/styles/accountsEntry.css")
+  link(rel="stylesheet", href="/styles/layout.css")
+
+block content
+  .header
+    h1 Excel-Like Interface
+    .input-row
+      label(for="code") Code:
+      input(type="text", id="code", name="code", required)
+      label(for="name") Name:
+      input(type="text", id="name", name="name", required)
+      label(for="type") Type:
+      select(id="type", name="type")
+        option(value="Income") Income
+        option(value="Expense") Expense
+      label(for="memo") Memo:
+      textarea(id="memo", name="memo")
+      label(for="actions") Actions:
+      input(type="text", id="actions", name="actions")
+      input(type="submit", value="Add")
+
+  .table
+    .table-row.table-header
+      .cell Code
+      .cell Name
+      .cell Type
+      .cell Memo
+      .cell Actions
+
+  .table-row
+    .cell
+    .cell
+    .cell
+    .cell
+    .cell
+
+  block scripts
+    script(src="/scripts/layout.js")

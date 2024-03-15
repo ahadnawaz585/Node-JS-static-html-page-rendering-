@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accounting App</title>
+</head>
+<body>
+    <h1>Accounting App</h1>
+    <form id="accountingForm">
+        <label for="code">Code:</label>
+        <input type="text" id="code" name="code" required><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
+        </select><br>
+
+        <label for="memo">Memo:</label>
+        <textarea id="memo" name="memo"></textarea><br>
+
+        <label for="actions">Actions:</label>
+        <input type="text" id="actions" name="actions"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

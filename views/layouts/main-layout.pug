@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    script.
+      var exports = {}; 
+    block styles
+      link(rel="stylesheet", href="/styles/layout.css")
+    title #{pageTitle}
+
+  body
+    header
+      nav.navbar
+        .logo
+          a(href="/") Your Logo
+        ul.menu
+          li
+            a(href="/") Home
+          li
+            a(href='/accountantTable') Accountant
+            .dropdown-menu
+              ul
+                li
+                  a(href='/accountant') Add Accountant
+                li
+                  a(href='/accountantTable') Show Accountants
+          li
+            a(href="/accounts") Account
+          li
+            a(href="../views/accountant.html") Ledger
+        .menu-toggle
+          .bar
+          .bar
+          .bar
+    block content
+  block scripts
+    script(src="/scripts/layout.js")
