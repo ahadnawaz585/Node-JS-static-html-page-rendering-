@@ -10,7 +10,7 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/ahadnawaz585/Node-JS-static-html-page-rendering-
     ```
 
 2. Install dependencies:
